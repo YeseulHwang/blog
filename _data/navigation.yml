@@ -1,0 +1,16 @@
+# main links
+main:
+  - title: "About"
+    url: /About/
+  - title: "Business"
+    url: /Business/
+  - title: "Coding"
+    url: /Coding/
+  - title: "Learning"
+    url: /Learning/
+  - title: "Tags"
+    url: /Tags/
+  - title: "Sitemap"
+    url: /sitemap/
+
+    
