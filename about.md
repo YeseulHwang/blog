@@ -1,18 +1,21 @@
 ---
-layout: page
-title: About
+layout: single
+author_profile: true
+title: About this Blog!
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
 
 
-[jekyll-organization]: https://github.com/jekyll
+
+안녕하세요.  
+저는 서울대학교에서 경제학 학사, 석사를 마치고   
+뒤늦게 컴퓨터 공학에 관심을 가지게 된 경제학 박사과정생입니다.  
+이 블로그는 문과생을 위한 컴퓨터공학 관련 정보를 업로드 하는 블로그입니다.  
+경제학을 공부한 제가 컴퓨터 공학에 관심을 가지고 공부해나가던 중   
+하나부터 열까지 너무 어려운데   
+설명이 불친절했던 부분이 너무 많아서  
+최대한 쉽게 개념을 정리해두고자 만들게 되었습니다.  
+또 게시글을 수정 보완해 나가면서 제 실력도 쑥쑥 자라기를 바라면서...  
+틀린 부분이 있으면 알려주시면 감사드리겠습니다!   
+

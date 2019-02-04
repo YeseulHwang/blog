@@ -2,15 +2,13 @@
 main:
   - title: "About"
     url: /About/
-  - title: "Business"
-    url: /Business/
-  - title: "Coding"
-    url: /Coding/
-  - title: "Learning"
-    url: /Learning/
+  - title: "Posts"
+    url: /posts/
+  - title: "Categories"
+    url: /categories/
   - title: "Tags"
-    url: /Tags/
-  - title: "Sitemap"
-    url: /sitemap/
-
-    
+    url: /tags/
+  - title: "Pages"
+    url: /page-archive/
+  - title: "Collections"
+    url: /collection-archive/
