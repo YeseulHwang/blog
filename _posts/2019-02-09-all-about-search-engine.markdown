@@ -18,6 +18,34 @@ published: false
 #검색엔진이란 무엇인가
 
 ##검색엔진의 원리
+검색엔진은 형태소 분석기, 색인 기능, 그리고 검색기능으로 이루어져 있다고 설명하고 있다.
+https://needjarvis.tistory.com/167
+
+1. 형태소 분석기
+필요한 단어들은 패션 잡지, 신문에서 본문을 가져와 형태소 분석을 하여 저장해 놓는 방법을 활용
+형태소 분석기는 엘라스틱서치에서 만든 노리(Nori)와 기존 많은 사람들이 사용하는 은전한닢 프로젝트(MeCab)
+노리에 대한 설명은 https://www.elastic.co/kr/blog/nori-the-official-elasticsearch-plugin-for-korean-language-analysis
+노리 설치 방법 https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-nori.html
+파이썬에서는 KoNLPy 라이브러리 있음
+노리는 엘라스틱서치의 플러그 인인데 파이썬에서도 가능한지 모르겠음
+
+2. 색인 기능
+인덱스란?
+엘라스틱 서치을 사용한다고 햇을때
+GET 입력되어있는 조회하기
+맨 처음에 하면 404 에러가 나옴
+PUT을 활용하여 인덱스를 생성
+인덱스 안에 도큐먼트를 만들때 POST사용
+생성된 도큐먼트를 수정, 여러개 한꺼번에 입력할때 update, bulk옵션을 줄 수 있음
+인덱스에서 매핑을 해야지 각 property가 어떤 형식인지(int, boolean, string, date, geo_point 등) 혼동없이 데이터를 이용가능
+
+인프런 강의로 기본 개념 학습
+https://www.inflearn.com/course/elk-스택-데이터-분석/엘라스틱서치-데이터-입력-조회-삭제-get-post-put-delete/
+
+3. 검색 기능
+앞의 색인 및 도큐먼트가 저장되어 있어야 검색을 할 준비를 마친 것입니다.
+search 옵션을 사용하면 되는데 이때 requests body를 다양하게 변형하면서 다채로운 검색이 가능
+참고 https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-body.html
 
 ###Apache Lucene 아파치 루씬
 아파치 루씬은 정보검색 (Information Retrieval, IR) 무료 오픈소스 라이브러리입니다. 
@@ -48,22 +76,8 @@ https://db-engines.com/en/system/Elasticsearch%3BSolr%3BSphinx
 https://www.slideshare.net/kjmorc/ss-80803233
 https://www.slideshare.net/xpressengine/xecon-phpfest2014elasticsearch
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+검색 기능 자체를 외주로 줄 수도 있음-- 찾아보면 많이 있을 것
+  https://www.elastic.co/kr/solutions/site-search
+구글 커스텀 서치 https://developers.google.com/custom-search/
+Custom Search Site Restricted JSON API requests cost $5 per 1000 queries and there is no daily query limit. 
+You may sign up for billing in the API Console.
